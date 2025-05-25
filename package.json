@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.6",
     "pdfjs-dist": "^5.2.133",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
