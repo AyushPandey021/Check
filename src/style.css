@@ -25,6 +25,7 @@ button:focus {
 /* --------- */
 /*  Preloader */
 /* --------- */
+
 #preloader {
   position: fixed;
   top: 0;
@@ -139,7 +140,9 @@ button:focus {
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
-
+ #Head-logo{
+  color: purple;
+}
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;

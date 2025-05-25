@@ -40,7 +40,13 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          <h1>Ap.</h1>
+ <h1
+  className="fw-bold m-0"
+  style={{ fontSize: "clamp(1rem, 3vw, 2rem)", color: "white" }}
+>
+  Ap<span style={{ color: "#CD5FF8" }}>DEv</span>.
+</h1>
+
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -94,7 +100,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-            
+
             </Nav.Item>
 
             <Nav.Item className="fork-btn">

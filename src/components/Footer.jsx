@@ -14,10 +14,15 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Ayush Basic</h3>
+          <h3>Designed and Developed by  <span
+  className="fw-bold m-0"
+  style={{ fontSize: "clamp(1rem, 0vw, 0rem)", color: "white" }}
+>
+  Ap<span style={{ color: "#CD5FF8" }}>DEv</span>.
+</span></h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} AP🩷</h3>
+          <h3>Copyright © {year} AP💜</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
