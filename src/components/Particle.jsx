@@ -1,32 +1,26 @@
-import React, { useCallback } from "react";
+import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 function Particle() {
-  const particlesInit = useCallback(async engine => {
-    // console.log(engine);
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async container => {
-    // You can do stuff with container here
-  }, []);
+  const particlesInit = async (main) => {
+    await loadFull(main); // loads the full tsparticles bundle
+  };
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         particles: {
           number: {
             value: 160,
             density: {
               enable: true,
-              value_area: 1500,
+              area: 1500, // changed to "area"
             },
           },
-          links: {
+          line_linked: {
             enable: false,
             opacity: 0.03,
           },
@@ -47,7 +41,7 @@ function Particle() {
         },
         interactivity: {
           events: {
-            onClick: {
+            onclick: {
               enable: true,
               mode: "push",
             },
@@ -58,7 +52,7 @@ function Particle() {
             },
           },
         },
-        detectRetina: true,
+        retina_detect: true,
       }}
     />
   );
