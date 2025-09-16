@@ -1,26 +1,27 @@
 import React from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { Particles } from "@tsparticles/react";
+import { loadAll } from "@tsparticles/all";
 
 function Particle() {
-  const particlesInit = async (main) => {
-    await loadFull(main); // loads the full tsparticles bundle
+  const particlesInit = async (engine) => {
+    await loadAll(engine); // This is the correct modern setup
   };
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
+      className="fixed w-full h-full -z-10"
       options={{
         particles: {
           number: {
             value: 160,
             density: {
               enable: true,
-              area: 1500, // changed to "area"
+              area: 1500,
             },
           },
-          line_linked: {
+          links: {
             enable: false,
             opacity: 0.03,
           },
@@ -32,16 +33,17 @@ function Particle() {
             value: 1,
           },
           opacity: {
-            anim: {
+            value: 1,
+            animation: {
               enable: true,
               speed: 1,
-              opacity_min: 0.05,
+              minimumValue: 0.05,
             },
           },
         },
         interactivity: {
           events: {
-            onclick: {
+            onClick: {
               enable: true,
               mode: "push",
             },
@@ -52,7 +54,7 @@ function Particle() {
             },
           },
         },
-        retina_detect: true,
+        detectRetina: true,
       }}
     />
   );
