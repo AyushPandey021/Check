@@ -126,8 +126,8 @@ function Projects() {
             <ProjectCard
               imgPath={Rezorpay}
               isBlog={false}
-              title="Razorpay Frontend Clone "
-              description="Developed a fully responsive clone of Razorpay’s landing page using HTML and Tailwind CSS. Focused on building a pixel-perfect, modern UI with a clean layout, smooth hover effects, and a mobile-first approach. responsive grid systems. Successfully replicated key sections like the hero banner, features, and pricing cards while ensuring cross-browser compatibility and scalability for future enhancements."
+              title="CryptoConvo-UI  "
+              description=" frontend project where I designed and developed a fully responsive and modern user interface for a crypto discussion platform using HTML, CSS, Tailwind CSS, and JavaScript. The project focuses on creating an intuitive and visually appealing experience with reusable components, smooth animations, and a mobile-first design approach, making it ready for seamless backend integration."
               ghLink="https://github.com/AyushPandey021"
               demoLink="https://ayushpandey021.github.io/CryptoConvo-UI-project/"
             />
