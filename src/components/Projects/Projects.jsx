@@ -13,6 +13,7 @@ import gitexplorer from "../../Assets/Projects/gitexplorer.png";
 import Rezorpay from "../../Assets/Projects/Rezorpay.png";
 import frontai from "../../Assets/Projects/front-ai.png";
 import think from "../../Assets/Projects/think.png";
+import knowa from "../../Assets/Projects/knowaLern.png";
 
 function Projects() {
   return (
@@ -29,10 +30,29 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={knowa}
+              isBlog={false}
+              title="KnowaLearing - EdTech"
+              description="KnowaLearning – EdTech Platform is a full-stack React-based learning application that provides a smooth and secure online education experience. It includes user authentication with Google OAuth and password reset, allowing students and educators to log in easily. Users can explore courses, enroll with a single click, and make secure payments through Razorpay integration. The platform features real-time reviews so students can share their feedback instantly, helping others make better choices. With its clean UI, responsive design, and powerful backend, KnowaLearning ensures a seamless journey from course discovery to learning and progress tracking."
+              ghLink="https://github.com/AyushPandey021"
+              demoLink="https://lms-testing-static-front.onrender.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Speaky}
               isBlog={false}
               title="Speaksy – Language Learning"
-              description="Communication platform for real-time chat & video calls (MERN + Stream API). Developed with responsive React.js UI, secure WebRTC-based calls, authentication, and room-level access."
+              description="Platform is a MERN-based communication tool for interactive online learning.
+It offers secure authentication and room-level access for private or group sessions.
+Built with Stream API and WebRTC, it enables smooth real-time video calls.
+Users can chat live, send messages instantly, and stay connected.
+Supports media sharing like images, files, and videos in real-time.
+Responsive React.js UI makes it work seamlessly on all devices.
+Ensures low-latency communication for a natural learning experience.
+Keeps all chat and call data synced in real-time for every participant.
+Perfect for virtual classrooms, team discussions, and tutoring sessions.
+A complete solution to make online learning engaging and collaborative. "
               ghLink="https://github.com/AyushPandey021"
               demoLink="https://mern-chat-video-calling.onrender.com/login"
             />
